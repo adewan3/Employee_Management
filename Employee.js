@@ -1,6 +1,7 @@
 
 let employees;
 (async function(){
+    console.log("Hi");
     const data = await fetch("data.json");
     const res = await data.json();
     console.log(res);
