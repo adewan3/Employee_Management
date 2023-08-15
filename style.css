@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+:root{
+    --btn: #dbdbdb;
+    --btn-hover:#cacaca;
+    --itembg:rgb(30, 115, 219);
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#header{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+#button{
+    margin-top: 3%;
+    margin-right: 2%;
+    padding: 10px 15px;
+    background-color: var(--btn);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    
+    
+
+}
+#button:hover{
+    background-color: var(--btn-hover);
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+
+.content > div{
+    border: 1px solid black;
+    height: 450px;
+    overflow-y: scroll;
+}
+#Employee-List{
+    width: 30%;
+    padding: 10px;
+}
+#Display-data{
+    width: 70%;
+    padding: 10px;
+
+}
+#Employee-data{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.Employee-data-individual{
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--itembg);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+.Employee-data-individual:hover{
+    background-color: var(--btn-hover);
+}
+.Individual-Data{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Individual-Data > img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
